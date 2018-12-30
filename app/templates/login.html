@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block title %}Login - Russta.uk{% endblock %}
+{% block page_content %}
+<div class="page-header">
+    <h1>Login</h1>
+    <p>Please enter Admin details for login.</p>
+</div>
+{{ wtf.quick_form(form) }}
+{% endblock %}
